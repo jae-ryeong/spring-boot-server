@@ -1,16 +1,15 @@
 package com.group.libraryapp.dto.calculator.request;
 
+import lombok.AccessLevel;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Setter @Getter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@Getter
+@Setter
 public class CalculatorMultiplyRequest {
 
-    private final int num1;
-    private final int num2;
-
-    public CalculatorMultiplyRequest(int num1, int num2) {
-        this.num1 = num1;
-        this.num2 = num2;
-    }
+    private int num1;
+    private int num2;
 }
